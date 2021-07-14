@@ -1,0 +1,28 @@
+Four Bitwise Operations in Open Cv 
+AND,OR,XORand NOT 
+Very low level Operations
+But are paramount To image Processing 
+For Masks
+They operate in a binary manner
+Represented as grayscale images 
+pixel = turned off if it has value 0
+pixel = turned on if it has value grater than 0
+
+
+As I mentioned above, a given pixel is turned “on” if it
+has a value greater than zero, and it is turned “off” if it has
+a value of zero. Bitwise functions operate on these binary
+conditions.
+In order to utilize bitwise functions, we assume (in most
+cases) that we are comparing two pixels (the only exception
+is the NOT function). We’ll compare each of the pixels and
+then construct our bitwise representation.
+Let’s quickly review our binary operations:
+1. AND: A bitwise AND is true if and only if both pixels
+are greater than zero.
+2. OR: A bitwise OR is true if either of the two pixels
+are greater than zero.
+3. XOR: A bitwise XOR is true if and only if either of the
+two pixels are greater than zero, but not both.
+4. NOT: A bitwise NOT inverts the “on” and “off” pixels
+in an image.

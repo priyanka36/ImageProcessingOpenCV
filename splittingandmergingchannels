@@ -1,0 +1,21 @@
+A color image consists of multiple channels: a Red, a Green,
+and a Blue component. We have seen that we can access
+these components via indexing into NumPy arrays. But
+what if we wanted to split an image into its respective com-
+ponents?
+As you’ll see, we’ll make use of the cv2.split function.
+For the time being, let’s take a look at a sample image in
+Figure 6.11.
+We have an image of a wave crashing down. This image
+is very “blue” due to the ocean. How do we interpret the
+different channels of the image?
+The Red channel (Top-Left) is very dark. This makes sense,
+because an ocean scene has very few red colors in it. The
+red colors present are either very dark, and thus not repre-
+sented, or very light, and likely part of the white foam of
+the wave as it crashes down.
+The Green channel (Top-Right) is more represented in the
+image, since ocean water does contain greenish hues.
+Finally, the Blue channel (Bottom-Left) is extremely light,
+and near pure white in some locations. This is because
+shades of blue are heavily represented in our image.

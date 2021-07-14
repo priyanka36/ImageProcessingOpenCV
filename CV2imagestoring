@@ -1,0 +1,6 @@
+Normally, we think of images in the RGB color space –
+the red pixel first, the green pixel second, and the blue pixel
+third. However, OpenCV stores RGB images as NumPy ar-
+rays in reverse channel order. Instead of storing an image
+in RGB order, it instead stores the image in BGR order; thus
+we unpack the tuple in reverse order.

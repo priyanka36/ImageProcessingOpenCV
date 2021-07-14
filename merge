@@ -1,0 +1,7 @@
+cv2.merge takes single channel images and combines them to make a multi-channel image. You've run the Sobel edge detection algorithm on each channel on its own. You are then combining the results together into a final output image. If you combine the results together, it may not make sense visually at first but what you would be displaying are the edge detection results of all three planes combined into a single image.
+
+Ideally, hues of red will tell you the strength of the edge detection in the red channel, hues of green giving the strength of the detection for the green channel, and finally blue hues for the strength of detection in the blue.
+
+Sometimes this is a good debugging tool so that you can semantically see all of the edge information for each channel in a single image. However, this will most likely be very hard to interpret for very highly complicated images with lots of texture and activity.
+
+What is more usually done is to actually do an edge detection using a colour edge detection algorithm, or convert the image to grayscale and do the detection on that image instead.
