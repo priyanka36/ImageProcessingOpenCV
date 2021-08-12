@@ -1,0 +1,4 @@
+We create image of different resolutions and we search for the objects in those images
+It is a technique for image dimensionality reduction
+Multiscale signal representation in which a signal or image is subject to repeated 
+smoothing and subsampling

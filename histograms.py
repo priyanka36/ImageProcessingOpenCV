@@ -1,7 +1,9 @@
-import cv2 
-from matplotlib import pyplot as plt
-
-img = cv2.imread('sky.png',0)
-histg = cv2.calcHist([img],[0],None,[256],[0,256])
-plt.plot(histg)
+import cv2
+import matplotlib.pyplot as plt
+image = cv2.imread('sky.jpg')
+for i, col in enumerate(['b', 'g', 'r']):
+    hist = cv2.calcHist([image], [i], None, [256], [0, 256])
+    plt.plot(hist, color = col)
+    plt.xlim([0, 256])
+    
 plt.show()
