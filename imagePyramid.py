@@ -19,8 +19,10 @@ layer = grp[5]
 cv2.imshow("ULGP",layer)
 lp = [layer]
 
-for i in range(6,0,-1):
-    print(i)
+for i in range(5,0,-1):
+    guassian_extended = cv2.pyrUp(gp[i])
+    laplacian = cv2.subtract(gp(i-1),guassian_extended)
+    cv2.imshow(str(i),laplacian)
 
 # cv2.imshow("ResolutionDOwnlr2 Image",lr2)
 cv2.waitKey(0)
